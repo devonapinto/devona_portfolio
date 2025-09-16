@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devona Thelma Pinto - Web Developer & Machine Learning Engineer</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <!-- CUSTOMIZE: Change the logo/name here -->
+                <a href="#hero">DEVONA</a>
+            </div>
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#hero" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#certificates" class="nav-link">Certificates</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="hero-container">
+            <div class="hero-left">
+                <div class="profile-image">
+                    <!-- CUSTOMIZE: Replace this avatar with your profile picture -->
+                    <!-- To add your own image: 
+                         1. Save your JPG image in the same folder as this HTML file
+                         2. Replace the <div class="avatar"> section below with:
+                            <img src="your-profile-picture.jpg" alt="Devona Thelma Pinto" class="profile-img">
+                         3. Add this CSS to style.css:
+                            .profile-img { width: 280px; height: 280px; border-radius: 50%; object-fit: cover; }
+                    -->
+                    <img src="./pphoto.jpg" alt="Devona Thelma Pinto" class="profile-img">
+                </div>
+            </div>
+            <div class="hero-right">
+                <div class="hero-content">
+                    <h1 class="hero-name">
+                        <!-- CUSTOMIZE: The typing animation will show the name from app.js -->
+                        <span id="typing-text"></span>
+                        <span class="cursor">|</span>
+                    </h1>
+                    <!-- CUSTOMIZE: Update your specialty/title here -->
+                    <p class="hero-specialty">Web Developer & Machine Learning Engineer</p>
+                    <div class="hero-contact">
+                        <!-- CUSTOMIZE: Update your contact information here -->
+                        <div class="contact-item">
+                            <i class="fas fa-envelope"></i>
+                            <span>devonapinto@gmail.com</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i>
+                            <span>+91 9480987200</span>
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Bengaluru, Udupi</span>
+                        </div>
+                    </div>
+                    <div class="hero-social">
+                        <!-- CUSTOMIZE: Update your social media links here -->
+                        <a href="https://linkedin.com/in/devona-pinto-3a9200252/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://github.com/devonapinto" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <!-- CUSTOMIZE: Add more social links as needed -->
+                    </div>
+                    <button class="cta-button" onclick="scrollToSection('about')">
+                        Explore My Work
+                        <i class="fas fa-arrow-down"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-mouse">
+                <div class="scroll-wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <!-- CUSTOMIZE: Update your about description here -->
+                <p class="about-text">
+                    I'm a passionate Computer Science Engineering student at Shri Madhwa Vadiraja Institute of Technology and Management, Udupi, with an impressive CGPA of 9.22/10. Specializing in Web Development and Machine Learning, I've gained hands-on experience through internships and have won multiple hackathons including Hack_Teck 2.0. My journey combines technical expertise in full-stack development with innovative AI solutions to create impactful applications.
+                </p>
+                <div class="about-stats">
+                    <!-- CUSTOMIZE: Update these statistics based on your achievements -->
+                    <div class="stat">
+                        <span class="stat-number">3+</span>
+                        <span class="stat-label">Projects Completed</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">9.22</span>
+                        <span class="stat-label">CGPA</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">2+</span>
+                        <span class="stat-label">Internships</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="projects-grid">
+                <!-- CUSTOMIZE: Update project information here -->
+                <div class="project-card" data-aos="fade-up">
+                    <div class="project-icon">
+                        <!-- Movie/cinema related icon -->
+                        <i class="fas fa-film"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Movie Finder Web Application</h3>
+                        <!-- CUSTOMIZE: Update project description -->
+                        <p class="project-description">
+                            Created dynamic web application that fetches and displays movie details using API integration. Designed clean and user-friendly UI with responsive layouts for multiple device sizes. Successfully deployed on Vercel with optimized performance.
+                        </p>
+                        <div class="project-tech">
+                            <!-- CUSTOMIZE: Update technology tags -->
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">REST APIs</span>
+                        </div>
+                        <!-- CUSTOMIZE: Update project link - FIXED: Added proper onclick and target attributes -->
+                        <div class="project-links">
+                            <a href="https://movie-finder-nine-delta.vercel.app/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                <i class="fas fa-external-link-alt"></i> Live Demo
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="project-icon">
+                        <!-- Medical/eye related icon -->
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Glaucoma Detection System</h3>
+                        <!-- CUSTOMIZE: Update project description -->
+                        <p class="project-description">
+                            Built advanced glaucoma detection system using image processing and deep learning for early diagnosis. Used K-Means clustering and morphological operations to calculate Cup-to-Disc ratio from fundus images. Achieved 87% accuracy on test datasets.
+                        </p>
+                        <div class="project-tech">
+                            <!-- CUSTOMIZE: Update technology tags -->
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">OpenCV</span>
+                            <span class="tech-tag">TensorFlow</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">YOLOv8</span>
+                        </div>
+                        <div class="project-accuracy">
+                            <span class="accuracy-badge">87% Accuracy</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="project-icon">
+                        <!-- Plant/agriculture related icon -->
+                        <i class="fas fa-seedling"></i>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Tomato and Bell Pepper Disease Detection</h3>
+                        <!-- CUSTOMIZE: Update project description -->
+                        <p class="project-description">
+                            Developed mobile-based system to classify plant diseases using lightweight MobileNet model. Integrated Flask backend with Flutter frontend for real-time crop disease detection, helping farmers identify plant health issues.
+                        </p>
+                        <div class="project-tech">
+                            <!-- CUSTOMIZE: Update technology tags -->
+                            <span class="tech-tag">Flutter</span>
+                            <span class="tech-tag">MobileNet</span>
+                            <span class="tech-tag">Flask</span>
+                            <span class="tech-tag">TensorFlow Lite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Experience</h2>
+            <div class="timeline">
+                <!-- CUSTOMIZE: Update your work experience here -->
+                <div class="timeline-item" data-aos="fade-right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Nov 2024 – Apr 2025</div>
+                        <h3 class="timeline-title">Web Development Intern</h3>
+                        <h4 class="timeline-company">Quantum Learning • Remote</h4>
+                        <!-- CUSTOMIZE: Update experience description -->
+                        <p class="timeline-description">
+                            Built responsive Movie Finder web application using HTML, CSS, JavaScript, and APIs. Integrated third-party movie APIs to fetch and display dynamic movie details. Enhanced frontend design for cross-device compatibility and deployed on Vercel with optimized performance.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-item" data-aos="fade-left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-date">Oct 2023 – Nov 2023</div>
+                        <h3 class="timeline-title">Machine Learning Research Intern</h3>
+                        <h4 class="timeline-company">Manipal Institute of Technology (MIT), Udupi • Onsite</h4>
+                        <!-- CUSTOMIZE: Update experience description -->
+                        <p class="timeline-description">
+                            Developed predictive stock price model using machine learning on historical data. Implemented Linear Regression and ARIMA algorithms for financial trend forecasting. Collaborated with research team to validate model accuracy against real-world market data.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills">
+        <div class="container">
+            <h2 class="section-title">Technical Skills</h2>
+            <div class="skills-grid">
+                <!-- CUSTOMIZE: Update your skills here -->
+                <div class="skill-category" data-aos="fade-up">
+                    <h3 class="category-title">Programming Languages</h3>
+                    <div class="skill-items">
+                        <div class="skill-item">
+                            <span class="skill-name">Python</span>
+                            <div class="skill-bar">
+                                <!-- CUSTOMIZE: Update skill percentages -->
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">C</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="100">
+                    <h3 class="category-title">Backend & ML/AI</h3>
+                    <div class="tech-skills">
+                        <!-- CUSTOMIZE: Update your backend and ML skills -->
+                        <div class="tech-skill">Flask</div>
+                        <div class="tech-skill">TensorFlow</div>
+                        <div class="tech-skill">TensorFlow Lite</div>
+                        <div class="tech-skill">REST APIs</div>
+                        <div class="tech-skill">scikit-learn</div>
+                        <div class="tech-skill">OpenCV</div>
+                        <div class="tech-skill">Pandas</div>
+                        <div class="tech-skill">Matplotlib</div>
+                        <div class="tech-skill">YOLOv8</div>
+                    </div>
+                </div>
+
+                <div class="skill-category" data-aos="fade-up" data-aos-delay="200">
+                    <h3 class="category-title">Frontend & Tools</h3>
+                    <div class="tech-skills">
+                        <!-- CUSTOMIZE: Update your frontend and tools -->
+                        <div class="tech-skill">Flutter</div>
+                        <div class="tech-skill">Bootstrap</div>
+                        <div class="tech-skill">Responsive Design</div>
+                        <div class="tech-skill">Git</div>
+                        <div class="tech-skill">GitHub</div>
+                        <div class="tech-skill">Visual Studio Code</div>
+                        <div class="tech-skill">Postman</div>
+                        <div class="tech-skill">Jupyter Notebook</div>
+                        <div class="tech-skill">Vercel</div>
+                        <div class="tech-skill">Netlify</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <h2 class="section-title">Certificates & Awards</h2>
+            <!-- CUSTOMIZE: Add your certificate images here
+                 To add certificate images:
+                 1. Save your certificate images (JPG/PNG) in the same folder
+                 2. Replace the <i> icons with <img> tags like this:
+                    <img src="certificate-name.jpg" alt="Certificate Name" class="certificate-image">
+                 3. Add CSS: .certificate-image { width: 80px; height: 80px; object-fit: cover; border-radius: 50%; }
+            -->
+            <div class="certificates-slider">
+                <div class="certificate-track">
+                    <!-- CUSTOMIZE: Update your certificates here -->
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <!-- CUSTOMIZE: Replace with certificate image -->
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="certificate-content">
+                            <h3 class="certificate-title">Winner – Hack_Teck 2.0 (2023)</h3>
+                            <p class="certificate-desc">Built web-based solution for real-time health data monitoring</p>
+                            <div class="certificate-badge">Winner</div>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <!-- CUSTOMIZE: Replace with certificate image -->
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="certificate-content">
+                            <h3 class="certificate-title">Participant – IEEE UREKA 2023</h3>
+                            <p class="certificate-desc">Contributed to collaborative ML and IoT projects</p>
+                            <div class="certificate-badge">Participant</div>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <!-- CUSTOMIZE: Replace with certificate image -->
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <div class="certificate-content">
+                            <h3 class="certificate-title">National Level Hackathon</h3>
+                            <p class="certificate-desc">Competed in Bangalore against top engineering talent</p>
+                            <div class="certificate-badge">Participant</div>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <!-- CUSTOMIZE: Replace with certificate image -->
+                            <i class="fab fa-python"></i>
+                        </div>
+                        <div class="certificate-content">
+                            <h3 class="certificate-title">Basics of Python Programming</h3>
+                            <p class="certificate-desc">Programming fundamentals and best practices certification</p>
+                            <div class="certificate-badge">Certified</div>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <!-- CUSTOMIZE: Replace with certificate image -->
+                            <i class="fas fa-database"></i>
+                        </div>
+                        <div class="certificate-content">
+                            <h3 class="certificate-title">SQL Fundamentals</h3>
+                            <p class="certificate-desc">Database design and optimization certification</p>
+                            <div class="certificate-badge">Certified</div>
+                        </div>
+                    </div>
+
+                    <!-- Duplicate for smooth scrolling effect -->
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="certificate-content">
+                            <h3 class="certificate-title">Winner – Hack_Teck 2.0 (2023)</h3>
+                            <p class="certificate-desc">Built web-based solution for real-time health data monitoring</p>
+                            <div class="certificate-badge">Winner</div>
+                        </div>
+                    </div>
+
+                    <div class="certificate-card">
+                        <div class="certificate-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <div class="certificate-content">
+                            <h3 class="certificate-title">Participant – IEEE UREKA 2023</h3>
+                            <p class="certificate-desc">Contributed to collaborative ML and IoT projects</p>
+                            <div class="certificate-badge">Participant</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-text">
+                    <!-- CUSTOMIZE: Update copyright year and name -->
+                    <p>&copy; 2025 Devona Thelma Pinto. All rights reserved.</p>
+                </div>
+                <div class="footer-social">
+                    <!-- CUSTOMIZE: Update your social media links -->
+                    <a href="https://linkedin.com/in/devona-pinto-3a9200252/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://github.com/devonapinto" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+</html>
