@@ -22,3 +22,5 @@ Add more projects or sections as desired.
 License
 This project is open source and free to use.
 
+Link to view live:
+https://devona-portfolio.vercel.app/
